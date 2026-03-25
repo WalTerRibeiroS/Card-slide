@@ -18,7 +18,7 @@ Este projeto é uma maneira simples de como slides podem ser aplicados, futurame
 
 ## 🌎 Deploy
 
-[Link da pagina]()
+[Link da pagina](https://walterribeiros.github.io/Card-slide/)
 
 ## 📸 Preview
 
