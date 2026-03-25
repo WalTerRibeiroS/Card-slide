@@ -1,0 +1,141 @@
+body{
+    background-color: rgba(0, 0, 0, 0.54);   
+    height: 100vh;
+
+}
+h1{
+    text-align: center;
+}
+/* slide infinito carrosel com manipulacao de DOM*/
+.container{
+    overflow: hidden;
+
+/*3 cards
+    overflow: hidden;
+    width: 1100px;
+    margin: auto;
+*/
+}
+.slides{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cards{
+    padding: 40px;
+    background-color: hsl(214, 9%, 49%);
+    margin: 50px 17px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+img{
+    width: 250px;
+    height: 300px;
+    border: 2px solid black;
+    display: block
+}
+.cards:hover{
+    transform: scale(1.02);
+}
+.anterior, .proximo{
+    position: absolute;
+    top: 45%;
+    transform: translateY(-100%) ;
+    font-size: 2rem;
+    padding: 10px 20px;
+    border-radius:70px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.799);
+    color: white;
+    border: none;
+    cursor: pointer
+}
+.anterior{
+    left: 0;
+}
+.proximo{
+    right: 0;
+}
+
+/* slide finito com transition*/
+.slider-wrapper{
+    position: relative;
+    width: 900px;
+    margin: auto;
+}
+
+.container-slideFinito{
+    overflow: hidden;
+    width: 100%;
+}
+
+.slides-finito{
+    display: flex;
+    transition: transform 0.4s ease;
+}
+
+.cards-finito{
+    flex: 0 0 300px;
+}
+.anterior2, .proximo2{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-100%) ;
+    font-size: 2rem;
+    padding: 10px 20px;
+    border-radius:70px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.799);
+    color: white;
+    border: none;
+    cursor: pointer
+}
+.anterior2{
+    left: -7%;
+    display: none;
+
+}
+.proximo2{
+    right: -1.8%;
+}
+/* slide infinito carrosel com transition*/
+
+.slider-wrapper-infinito{
+    position: relative;
+    width: 1200px;
+    margin: auto;
+}
+
+.container-slideInfinito{
+    overflow: hidden;
+    width: 100%;
+}
+
+.slides-infinito{
+    display: flex;
+    transition: transform 0.4s ease;
+}
+.cards-infinito{
+    flex: 0 0 300px;
+}
+.anterior3, .proximo3{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-100%) ;
+    font-size: 2rem;
+    padding: 10px 20px;
+    border-radius:70px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.799);
+    color: white;
+    border: none;
+    cursor: pointer
+}
+.anterior3{
+    left: -7%;
+}
+.proximo3{
+    right: -3%;
+}
